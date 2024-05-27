@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-system@1.5.0/dist/aframe-physics-system.min.js"></script>
     <script src="script.js" defer></script>
-
 </head>
+
 <body>
     <a-scene>
-        <a-sky color="#03182b"></a-sky>
+        <a-camera><a-cursor></a-cursor></a-camera>
+
+        <a-sky color="#03182b" cursor-listener></a-sky>
     </a-scene>
 </body>
+
 </html>
